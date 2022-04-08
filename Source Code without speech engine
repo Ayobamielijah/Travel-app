@@ -1,0 +1,1039 @@
+def welcome():
+    print("******************************************************************")
+    print("******************************************************************")
+    print("Welcome to ABC travel agency")
+    print("'This is a prototype of the main app'")
+    print("By Ayobami Elijah")
+    print("")
+    print("All rights reserved Copyright © 2021")
+    print("To avoid this demo version from stopping unexpectedly, please only input numeric digits in places like (Enter Range)")
+    print("")
+    country1 = "Nigeria"
+    price1 = "£800"
+    price1no = 800
+    price1ch = 750
+    hotelfornigeria1 = "Ibis Hotel Nigeria"
+    hotelfornigeriaprice1 = "£10"
+    hotelfornigeria2 = "Raddison Blu Hotel"
+    hotelfornigeriaprice2 = "£12 per night"
+    hotelfornigeria3 = "Swiss Hotel"
+    hotelfornigeriaprice3 = "£51 per night"
+    hotelfornigeria4 = "Lekki House Hotel"
+    hotelfornigeriaprice4 = "£80  per night"
+    country2 = "France"
+    price2 = "£200"
+    price2no = 200
+    price2ch = 100
+    hotelforfrance1 = "Hotel Le Paquebot"
+    hotelforfranceprice1 = "£50 per night"
+    hotelforfrance2 = "Hotel du Paris"
+    hotelforfranceprice2 = "£60 per night"
+    hotelforfrance3 = "ibis Hotel"
+    hotelforfranceprice3 = "£120 per night"
+    hotelforfrance4 = "l'hotel de La Petit Dejeuner"
+    hotelforfranceprice4 = "£180 per night"
+    country3 = "Spain"
+    price3 = "£250"
+    price3no = 250
+    price3ch = 150
+    hotelforspain1 = "Hotel Ibiza"
+    hotelforspainprice1 = "£20 per night"
+    hotelforspain2 = "Hotel Espanol"
+    hotelforspainprice2 = "£15 per night"
+    hotelforspain3 = "Hotel Guadelajara"
+    hotelforspainprice3 = "£50 per night"
+    country4 = "Scotland"
+    price4 = "£80"
+    price4no = 80
+    price4ch = 40
+    hotelforscotland1 = "Edinburgh Int Hotel"
+    hotelforscotlandprice1 = "£80 per night"
+    hotelforscotland2 = "Bagpipes Hotel"
+    hotelforscotlandprice2 = "£90 per night"
+    hotelforscotland3 = "Scottish Official Hotel"
+    hotelforscotlandprice3 = "£150 per night"
+    hotelforscotland4 = "ibis hotel"
+    hotelforscotlandprice4 = "£180 per night"
+    country5 = "Albania"
+    price5 = "£300"
+    price5no = 300
+    price5ch = 200
+    hotelforalbania1 = "Saranda International"
+    hotelforalbaniaprice1 = "£17 per night"
+    hotelforalbania2 = "Hotel Mondial"
+    hotelforalbania2price2 = "£50 per night"
+    hotelforalbania3 = "The Plaza"
+    hotelforalbaniaprice3 = "£129 per night"
+    hotelforalbania4 = "Sky Hotel Tirana"
+    hotelforalbaniaprice4 = "£150 per night"
+    country6 = "Canada"
+    price6 = "£900"
+    price6no = 900
+    price6ch = 750
+    hotelforcanada1 = "Toronto InterContinental Hotel"
+    hotelforcanadaprice1 = "£30 per night"
+    hotelforcanada2 = "DoubleTree Hotel, Toronto"
+    hotelforcanadaprice2 = "£50 Per night"
+    hotelforcanada3 = "One king West Hotel"
+    hotelforcanadaprice3 = "£111 per night"
+    hotelforcanada4 = "The Westin Harbour Castle"
+    hotelforcanadaprice4 = "£190 per night"
+    country7 = "Kenya"
+    price7 = "700"
+    price7no = 700
+    price7ch = 550
+    hotelforkenya1 = "Kenyan AAF Hotel"
+    hotelforkenyaprice1 = "£20 per night"
+    hotelforkenya2 = "Ansalami Hotel"
+    hotelforkenyaprice2 = "£30 per night"
+    hotelforkenya3 = "Twilight Hotel, Nairobi"
+    hotelforkenyaprice3 = "£60 per night"
+    hotelforkenya4 = "Nairobi InterContinental Hotel"
+    hotelforkenyaprice4 = "£80 per night"
+    country8 = "Italy"
+    price8 = "£180"
+    price8no = 180
+    price8ch = 100
+    hotelforitaly1 = "Roman Jewish Hotel"
+    hotelforitalyprice1 = "£30 per night"
+    hotelforitaly2 = "Italian suites"
+    hotelforitalyprice2 = "£40 per night"
+    hotelforitaly3 = "Hotel Romeo"
+    hotelforitalyprice3 = "£90 per night"
+    hotelforitaly4 = "Grand en suite"
+    hotelforitalyprice4 = "£160 per night"
+    country9 = "Argentina"
+    price9 = "£1000"
+    price9no = 1000
+    price9ch = 800
+    hotelforargentina1 = "Hotel d'internationale"
+    hotelforargentinaprice1 = "£30 per night"
+    hotelforargentina2 = "Ibis Hotel Argentina"
+    hotelforargentinaprice2 = "£50 per night"
+    hotelforargentina3 = "Hotel L'aeroport"
+    hotelforargentinaprice3 = "£80 per night"
+    hotelforargentina4 = "MIH argentina"
+    hotelforargentinaprice4 = "£180 per night"
+    country10 = "Ukraine"
+    price10 = "£320"
+    price10no = 320
+    price10ch = 220
+    hotelforukraine1 = "Ibis Styles lviv Centre"
+    hotelforukraineprice1 = "£38 per night"
+    hotelforukraine2 = "Mercure Kyiv Congress"
+    hotelforukraineprice2 = "£39 per night"
+    hotelforukraine3 = "Ibis kiev Centre"
+    hotelforukraineprice3 = "54 per night"
+    hotelforukraine4 = "InterContinental Kyiv, an IHG Hotel"
+    hotelforukraineprice4 = "£196 per night"
+    print("Please choose a continent")
+    print("Please choose either Europe, South America, or Africa")
+    continent = input().lower()
+    if continent == "europe":
+        print(f"{country2}, {country3}, {country4}, {country8}, {country10}, {country5}")
+        print("select destination country")
+        destination_country = input().lower()
+        if destination_country == "spain":
+            print(f"{country3} is {price3}")
+            print("Would you like a Hotel?")
+            likes_hotel = input().lower()
+            if likes_hotel == "yes":
+                print("Enter a price range")
+                numberforspain = int(input())
+                if numberforspain <= 50:
+                    print(f"{hotelforspain1}-{hotelforspainprice1}, {hotelforspain2}-{hotelforspainprice2}")
+                elif numberforspain >= 51:
+                    print(f"{hotelforspain3}-{hotelforspainprice3}")
+                else:
+                    print("please enter from 0-100")
+            print("Number of people traveling")
+            spaintravellers = int(input())
+            if spaintravellers > 1:
+                print("Enter number of Adults")
+                spainnumberofadults = int(input())
+                print("Enter number of children")
+                spainnumberofchildren = int(input())
+                print("******************************************************************")
+                print(f"Total Travelers = {spainnumberofadults} Adults + {spainnumberofchildren} Children")
+                print(spainnumberofadults + spainnumberofchildren)
+                print("******************************************************************")
+                print("Please note that the hotel booking is not included in the bill")
+                print("Subtotal=£")
+                print(spainnumberofadults * price3no + spainnumberofchildren * price3ch)
+                print("******************************************************************")
+                print("******************************************************************")
+                print("Thank you please proceed to make your payments")
+                print("At this time we only accept credit card payments")
+                print("Enter First and Last Name")
+                spainfirstandlastname = input()
+                print("Enter email address")
+                spainemailaddress = input()
+                print("Enter Card number")
+                spaincardnumber = int(input())
+                print("Enter Expiry Date")
+                spainexpdate = input()
+                print("Enter CVV")
+                spaincvv = int(input())
+                print("Print Receipt?")
+                printreceiptspain = input().lower()
+                if printreceiptspain == "yes":
+                    print("******************************************************************")
+                    print(f"Thank you for your payment {spainfirstandlastname},")
+                    print(f"A copy of this receipt will be sent to {spainemailaddress}")
+                    print("******************************************************************")
+                    print(f"your trip to {country3} is {price3}")
+                    print(f"{spainnumberofadults} Adults = {price3no}")
+                    print(f"{spainnumberofchildren} Children = {price3ch}")
+                    print(f"Total = £{spainnumberofadults * price3no + spainnumberofchildren * price3ch}")
+                    print(f"Charged to your card '{spaincardnumber}'")
+                    print("******************************************************************")
+                else:
+                    print(f"Thank you for your payment {spainfirstandlastname},")
+                    print(f"A copy of the receipt will be sent to {spainemailaddress}")
+            else:
+                print("******************************************************************")
+                print("******************************************************************")
+                print("Thank you please proceed to make your payments")
+                print("At this time we only accept credit card payments")
+                print("Enter First and Last Name")
+                spainfirstandlastname = input()
+                print("Enter email address")
+                spainemailaddress = input()
+                print("Enter Card number")
+                spaincardnumber = int(input())
+                print("Enter Expiry Date")
+                spainexpdate = input()
+                print("Enter CVV")
+                spaincvv = int(input())
+                print("Print Receipt?")
+                printreceiptspain = input().lower()
+                if printreceiptspain == "yes":
+                    print("******************************************************************")
+                    print(f"Thank you for your payment {spainfirstandlastname},")
+                    print(f"A copy of this receipt will be sent to {spainemailaddress}")
+                    print("******************************************************************")
+                    print(f"your trip to {country3} is {price3}")
+                    print(f"Total = £")
+                    print(spaintravellers * price3no)
+                    print(f"Charged to your card '{spaincardnumber}'")
+                    print("******************************************************************")
+                else:
+                    print(f"Thank you for your payment {spainfirstandlastname},")
+                    print(f"A copy of the receipt will be sent to {spainemailaddress}")
+        elif destination_country == "france":
+            print(f"{country2} is {price2}")
+            print("Would you like a Hotel?")
+            wants_hotel = input().lower()
+            if wants_hotel == "yes":
+                print("Enter price range")
+                numberforfrance = int(input())
+                if numberforfrance < 100:
+                    print(f"{hotelforfrance1}-{hotelforfranceprice1}, {hotelforfrance2}-{hotelforfranceprice2}")
+                elif numberforfrance > 100:
+                    print(f"{hotelforfrance3}-{hotelforfranceprice3}, {hotelforfrance4}-{hotelforfranceprice4}")
+                else:
+                    print("please enter from 0-100")
+            print("Number of people traveling")
+            francetravellers = int(input())
+            if francetravellers > 1:
+                print("Enter number of Adults")
+                francenumberofadults = int(input())
+                print("Enter number of children")
+                francenumberofchildren = int(input())
+                print("******************************************************************")
+                print(f"Total Travelers = {francenumberofadults} Adults + {francenumberofchildren} Children")
+                print(francenumberofadults + francenumberofchildren)
+                print("******************************************************************")
+                print("Please note that the hotel booking is not included in the bill")
+                print("Subtotal=£")
+                print(francenumberofadults * price2no + francenumberofchildren * price2ch)
+                print("******************************************************************")
+                print("******************************************************************")
+                print("Thank you please proceed to make your payments")
+                print("At this time we only accept credit card payments")
+                print("Enter First and Last Name")
+                francefirstandlastname = input()
+                print("Enter email address")
+                franceemailaddress = input()
+                print("Enter Card number")
+                francecardnumber = int(input())
+                print("Enter Expiry Date")
+                franceexpdate = input()
+                print("Enter CVV")
+                francecvv = int(input())
+                print("Print Receipt?")
+                printreceiptfrance = input().lower()
+                if printreceiptfrance == "yes":
+                    print("******************************************************************")
+                    print(f"Thank you for your payment {francefirstandlastname},")
+                    print(f"A copy of this receipt will be sent to {franceemailaddress}")
+                    print("******************************************************************")
+                    print(f"your trip to {country3} is {price3}")
+                    print(f"{francenumberofadults} Adults = {price3no}")
+                    print(f"{francenumberofchildren} Children = {price3ch}")
+                    print(f"Total = £")
+                    print(francenumberofadults * price2no + francenumberofchildren * price2ch)
+                    print(f"Charged to your card '{francecardnumber}'")
+                    print("******************************************************************")
+                else:
+                    print(f"Thank you for your payment {francefirstandlastname},")
+                    print(f"A copy of the receipt will be sent to {franceemailaddress}")
+            else:
+                print("******************************************************************")
+                print("******************************************************************")
+                print("Thank you please proceed to make your payments")
+                print("At this time we only accept credit card payments")
+                print("Enter First and Last Name")
+                francefirstandlastname = input()
+                print("Enter email address")
+                franceemailaddress = input()
+                print("Enter Card number")
+                francecardnumber = int(input())
+                print("Enter Expiry Date")
+                franceexpdate = input()
+                print("Enter CVV")
+                francecvv = int(input())
+                print("Print Receipt?")
+                printreceiptfrance = input().lower()
+                if printreceiptfrance == "yes":
+                    print("******************************************************************")
+                    print(f"Thank you for your payment {francefirstandlastname},")
+                    print(f"A copy of this receipt will be sent to {franceemailaddress}")
+                    print("******************************************************************")
+                    print(f"your trip to {country3} is {price3}")
+                    print(f"Total = £")
+                    print(francetravellers * price3no)
+                    print(f"Charged to your card '{francecardnumber}'")
+                    print("******************************************************************")
+                else:
+                    print(f"Thank you for your payment {francefirstandlastname},")
+                    print(f"A copy of the receipt will be sent to {franceemailaddress}")
+        elif destination_country == "scotland":
+            print(f"{country4} is {price4}")
+            print("Would you like a Hotel?")
+            needs_hotel = input().lower()
+            if needs_hotel == "yes":
+                print("Enter price range")
+                numberforscotland = int(input())
+                if numberforscotland < 100:
+                    print(f"{hotelforscotland1}-{hotelforscotlandprice1}, {hotelforscotland2}-{hotelforscotlandprice2}")
+                elif numberforscotland > 100:
+                    print(f"{hotelforscotland3}-{hotelforscotlandprice3}, {hotelforscotland4}-{hotelforscotlandprice4}")
+                else:
+                    print("please enter from 0-100")
+            print("Number of people traveling")
+            scotlandtravellers = int(input())
+            if scotlandtravellers > 1:
+                print("Enter number of Adults")
+                scotlandnumberofadults = int(input())
+                print("Enter number of children")
+                scotlandnumberofchildren = int(input())
+                print("******************************************************************")
+                print(f"Total Travelers = {scotlandnumberofadults} Adults + {scotlandnumberofchildren} Children")
+                print(scotlandnumberofadults + scotlandnumberofchildren)
+                print("******************************************************************")
+                print("Please note that the hotel booking is not included in the bill")
+                print("Subtotal=£")
+                print(scotlandnumberofadults * price4no + scotlandnumberofchildren * price4ch)
+                print("******************************************************************")
+                print("******************************************************************")
+                print("Thank you please proceed to make your payments")
+                print("At this time we only accept credit card payments")
+                print("Enter First and Last Name")
+                scotlandfirstandlastname = input()
+                print("Enter email address")
+                scotlandemailaddress = input()
+                print("Enter Card number")
+                scotlandcardnumber = int(input())
+                print("Enter Expiry Date")
+                scotlandexpdate = input()
+                print("Enter CVV")
+                scotlandcvv = int(input())
+                print("Print Receipt?")
+                printreceiptscotland = input().lower()
+                if printreceiptscotland == "yes":
+                    print("******************************************************************")
+                    print(f"Thank you for your payment {scotlandfirstandlastname},")
+                    print(f"A copy of this receipt will be sent to {scotlandemailaddress}")
+                    print("******************************************************************")
+                    print(f"your trip to {country4} is {price4}")
+                    print(f"{scotlandnumberofadults} Adults = {price4no}")
+                    print(f"{scotlandnumberofchildren} Children = {price4ch}")
+                    print(f"Total = £")
+                    print(scotlandnumberofadults * price4no + scotlandnumberofchildren * price4ch)
+                    print(f"Charged to your card '{scotlandcardnumber}'")
+                    print("******************************************************************")
+                else:
+                    print(f"Thank you for your payment {scotlandfirstandlastname},")
+                    print(f"A copy of the receipt will be sent to {scotlandemailaddress}")
+            else:
+                print("******************************************************************")
+                print("******************************************************************")
+                print("Thank you please proceed to make your payments")
+                print("At this time we only accept credit card payments")
+                print("Enter First and Last Name")
+                scotlandfirstandlastname = input()
+                print("Enter email address")
+                scotlandemailaddress = input()
+                print("Enter Card number")
+                scotlandcardnumber = int(input())
+                print("Enter Expiry Date")
+                scotlandexpdate = input()
+                print("Enter CVV")
+                scotlandcvv = int(input())
+                print("Print Receipt?")
+                printreceiptscotland = input().lower()
+                if printreceiptscotland == "yes":
+                    print("******************************************************************")
+                    print(f"Thank you for your payment {scotlandfirstandlastname},")
+                    print(f"A copy of this receipt will be sent to {scotlandemailaddress}")
+                    print("******************************************************************")
+                    print(f"your trip to {country4} is {price4}")
+                    print(f"Total = £")
+                    print(scotlandtravellers * price4no)
+                    print(f"Charged to your card '{scotlandcardnumber}'")
+                    print("******************************************************************")
+                else:
+                    print(f"Thank you for your payment {scotlandfirstandlastname},")
+                    print(f"A copy of the receipt will be sent to {scotlandemailaddress}")
+        elif destination_country == "albania":
+            print(f"{country5} is {price5}")
+            print("Would you like a hotel?")
+            fancies_hotel = input().lower()
+            if fancies_hotel == "yes":
+                print("Enter price range")
+                numberforalbania = int(input())
+                if numberforalbania <= 50:
+                    print(f"{hotelforalbania1} - {hotelforalbaniaprice1}, {hotelforalbania2} - {hotelforalbania2price2}")
+                elif numberforalbania >= 51:
+                    print(f"{hotelforalbania3} - {hotelforalbaniaprice3}, {hotelforalbania4} - {hotelforalbaniaprice4}")
+                else:
+                    print("please enter from 0-100")
+            print("Number of people traveling")
+            albaniatravellers = int(input())
+            if albaniatravellers > 1:
+                print("Enter number of Adults")
+                albanianumberofadults = int(input())
+                print("Enter number of children")
+                albanianumberofchildren = int(input())
+                print("******************************************************************")
+                print(f"Total Travelers = {albanianumberofadults} Adults + {albanianumberofchildren} Children")
+                print(albanianumberofadults + albanianumberofchildren)
+                print("******************************************************************")
+                print("Please note that the hotel booking is not included in the bill")
+                print("Subtotal=£")
+                print(albanianumberofadults * price5no + albanianumberofchildren * price5ch)
+                print("******************************************************************")
+                print("******************************************************************")
+                print("Thank you please proceed to make your payments")
+                print("At this time we only accept credit card payments")
+                print("Enter First and Last Name")
+                albaniafirstandlastname = input()
+                print("Enter email address")
+                albaniaemailaddress = input()
+                print("Enter Card number")
+                albaniacardnumber = int(input())
+                print("Enter Expiry Date")
+                albaniaexpdate = input()
+                print("Enter CVV")
+                albaniacvv = int(input())
+                print("Print Receipt?")
+                printreceiptalbania = input().lower()
+                if printreceiptalbania == "yes":
+                    print("******************************************************************")
+                    print(f"Thank you for your payment {albaniafirstandlastname},")
+                    print(f"A copy of this receipt will be sent to {albaniaemailaddress}")
+                    print("******************************************************************")
+                    print(f"your trip to {country5} is {price5}")
+                    print(f"{albanianumberofadults} Adults = {price5no}")
+                    print(f"{albanianumberofchildren} Children = {price5ch}")
+                    print(f"Total = £")
+                    print(albanianumberofadults * price5no + albanianumberofchildren * price5ch)
+                    print(f"Charged to your card '{albaniacardnumber}'")
+                    print("******************************************************************")
+                else:
+                    print(f"Thank you for your payment {albaniafirstandlastname},")
+                    print(f"A copy of the receipt will be sent to {albaniaemailaddress}")
+
+            else:
+                print("******************************************************************")
+                print("******************************************************************")
+                print("Thank you please proceed to make your payments")
+                print("At this time we only accept credit card payments")
+                print("Enter First and Last Name")
+                albaniafirstandlastname = input()
+                print("Enter email address")
+                albaniaemailaddress = input()
+                print("Enter Card number")
+                albaniacardnumber = int(input())
+                print("Enter Expiry Date")
+                albaniaexpdate = input()
+                print("Enter CVV")
+                albaniacvv = int(input())
+                print("Print Receipt?")
+                printreceiptalbania = input().lower()
+                if printreceiptalbania == "yes":
+                    print("******************************************************************")
+                    print(f"Thank you for your payment {albaniafirstandlastname},")
+                    print(f"A copy of this receipt will be sent to {albaniaemailaddress}")
+                    print("******************************************************************")
+                    print(f"your trip to {country5} is {price5}")
+                    print(f"Total = £")
+                    print(albaniatravellers * price5no)
+                    print(f"Charged to your card '{albaniacardnumber}'")
+                    print("******************************************************************")
+                else:
+                    print(f"Thank you for your payment {albaniafirstandlastname},")
+                    print(f"A copy of the receipt will be sent to {albaniaemailaddress}")
+
+        elif destination_country == "italy":
+            print(f"{country8} is {price8}")
+            print("Would you like a hotel?")
+            agrees_hotel = input().lower()
+            if agrees_hotel == "yes":
+                print("Enter price range")
+                numberforitaly = int(input())
+                if numberforitaly <= 50:
+                    print(f"{hotelforitaly1} - {hotelforitalyprice1}, {hotelforitaly2} - {hotelforitalyprice2}")
+                elif numberforitaly >= 51:
+                    print(f"{hotelforitaly3} - {hotelforitalyprice3}, {hotelforitaly4} - {hotelforitalyprice4}")
+                else:
+                    print("please enter from 0-100")
+            print("Number of people traveling")
+            italytravellers = int(input())
+            if italytravellers > 1:
+                print("Enter number of Adults")
+                italynumberofadults = int(input())
+                print("Enter number of children")
+                italynumberofchildren = int(input())
+                print("******************************************************************")
+                print(f"Total Travelers = {italynumberofadults} Adults + {italynumberofchildren} Children")
+                print(italynumberofadults + italynumberofchildren)
+                print("******************************************************************")
+                print("Please note that the hotel booking is not included in the bill")
+                print("Subtotal=£")
+                print(italynumberofadults * price8no + italynumberofchildren * price8ch)
+                print("******************************************************************")
+                print("******************************************************************")
+                print("Thank you please proceed to make your payments")
+                print("At this time we only accept credit card payments")
+                print("Enter First and Last Name")
+                italyfirstandlastname = input()
+                print("Enter email address")
+                italyemailaddress = input()
+                print("Enter Card number")
+                italycardnumber = int(input())
+                print("Enter Expiry Date")
+                italyexpdate = input()
+                print("Enter CVV")
+                italycvv = int(input())
+                print("Print Receipt?")
+                printreceiptitaly = input().lower()
+                if printreceiptitaly == "yes":
+                    print("******************************************************************")
+                    print(f"Thank you for your payment {italyfirstandlastname},")
+                    print(f"A copy of this receipt will be sent to {italyemailaddress}")
+                    print("******************************************************************")
+                    print(f"your trip to {country8} is {price8}")
+                    print(f"{italynumberofadults} Adults = {price8no}")
+                    print(f"{italynumberofchildren} Children = {price8ch}")
+                    print(f"Total = £")
+                    print(italynumberofadults * price8no + italynumberofchildren * price8ch)
+                    print(f"Charged to your card '{italycardnumber}'")
+                    print("******************************************************************")
+                else:
+                    print(f"Thank you for your payment {italyfirstandlastname},")
+                    print(f"A copy of the receipt will be sent to {italyemailaddress}")
+            else:
+                print("******************************************************************")
+                print("******************************************************************")
+                print("Thank you please proceed to make your payments")
+                print("At this time we only accept credit card payments")
+                print("Enter First and Last Name")
+                italyfirstandlastname = input()
+                print("Enter email address")
+                italyemailaddress = input()
+                print("Enter Card number")
+                italycardnumber = int(input())
+                print("Enter Expiry Date")
+                italyexpdate = input()
+                print("Enter CVV")
+                italycvv = int(input())
+                print("Print Receipt?")
+                printreceiptitaly = input().lower()
+                if printreceiptitaly == "yes":
+                    print("******************************************************************")
+                    print(f"Thank you for your payment {italyfirstandlastname},")
+                    print(f"A copy of this receipt will be sent to {italyemailaddress}")
+                    print("******************************************************************")
+                    print(f"your trip to {country8} is {price8}")
+                    print(f"Total = £")
+                    print(italytravellers * price8no)
+                    print(f"Charged to your card '{italycardnumber}'")
+                    print("******************************************************************")
+                else:
+                    print(f"Thank you for your payment {italyfirstandlastname},")
+                    print(f"A copy of the receipt will be sent to {italyemailaddress}")
+        elif destination_country == "ukraine":
+            print(f"{country10} is {price10}")
+            print("Would you like a hotel?")
+            clicks_hotel = input().lower()
+            if clicks_hotel == "yes":
+                print("Enter price range")
+                numberforukraine = int(input())
+                if numberforukraine <= 50:
+                    print(f"{hotelforukraine1} - {hotelforukraineprice1}, {hotelforukraine2} - {hotelforukraineprice2}")
+                elif numberforukraine >= 51:
+                    print(f"{hotelforukraine3} - {hotelforukraineprice3}, {hotelforukraine4} - {hotelforukraineprice4}")
+                else:
+                    print("please enter from 0-100")
+            print("Number of people traveling")
+            ukrainetravellers = int(input())
+            if ukrainetravellers > 1:
+                print("Enter number of Adults")
+                ukrainenumberofadults = int(input())
+                print("Enter number of children")
+                ukrainenumberofchildren = int(input())
+                print("******************************************************************")
+                print(f"Total Travelers = {ukrainenumberofadults} Adults + {ukrainenumberofchildren} Children")
+                print(ukrainenumberofadults + ukrainenumberofchildren)
+                print("******************************************************************")
+                print("Please note that the hotel booking is not included in the bill")
+                print("Subtotal=£")
+                print(ukrainenumberofadults * price10no + ukrainenumberofchildren * price10ch)
+                print("******************************************************************")
+                print("******************************************************************")
+                print("Thank you please proceed to make your payments")
+                print("At this time we only accept credit card payments")
+                print("Enter First and Last Name")
+                ukrainefirstandlastname = input()
+                print("Enter email address")
+                ukraineemailaddress = input()
+                print("Enter Card number")
+                ukrainecardnumber = int(input())
+                print("Enter Expiry Date")
+                ukraineexpdate = input()
+                print("Enter CVV")
+                ukrainecvv = int(input())
+                print("Print Receipt?")
+                printreceiptukraine = input().lower()
+                if printreceiptukraine == "yes":
+                    print("******************************************************************")
+                    print(f"Thank you for your payment {ukrainefirstandlastname},")
+                    print(f"A copy of this receipt will be sent to {ukraineemailaddress}")
+                    print("******************************************************************")
+                    print(f"your trip to {country10} is {price10}")
+                    print(f"{ukrainenumberofadults} Adults = {price10no}")
+                    print(f"{ukrainenumberofchildren} Children = {price10ch}")
+                    print(f"Total = £")
+                    print(ukrainenumberofadults * price10no + ukrainenumberofchildren * price10ch)
+                    print(f"Charged to your card '{ukrainecardnumber}'")
+                    print("******************************************************************")
+                else:
+                    print(f"Thank you for your payment {ukrainefirstandlastname},")
+                    print(f"A copy of the receipt will be sent to {ukraineemailaddress}")
+            else:
+                print("******************************************************************")
+                print("******************************************************************")
+                print("Thank you please proceed to make your payments")
+                print("At this time we only accept credit card payments")
+                print("Enter First and Last Name")
+                ukrainefirstandlastname = input()
+                print("Enter email address")
+                ukraineemailaddress = input()
+                print("Enter Card number")
+                ukrainecardnumber = int(input())
+                print("Enter Expiry Date")
+                ukraineexpdate = input()
+                print("Enter CVV")
+                ukrainecvv = int(input())
+                print("Print Receipt?")
+                printreceiptukraine = input().lower()
+                if printreceiptukraine == "yes":
+                    print("******************************************************************")
+                    print(f"Thank you for your payment {ukrainefirstandlastname},")
+                    print(f"A copy of this receipt will be sent to {ukraineemailaddress}")
+                    print("******************************************************************")
+                    print(f"your trip to {country10} is {price10}")
+                    print(f"Total = £")
+                    print(ukrainetravellers * price10no)
+                    print(f"Charged to your card '{ukrainecardnumber}'")
+                    print("******************************************************************")
+                else:
+                    print(f"Thank you for your payment {ukrainefirstandlastname},")
+                    print(f"A copy of the receipt will be sent to {ukraineemailaddress}")
+            print("You can only choose the countries listed above for now")
+            print("We'll update the rest later, Thank you for your patience")
+    elif continent == "south america":
+        print(f"{country6}, {country9}")
+        print("Select destination")
+        destination_countryy = input().lower()
+        if destination_countryy == "canada":
+            print(f"{country6} is {price6}")
+            print("Would you like a hotel?")
+            takes_hotel = input().lower()
+            if takes_hotel == "yes":
+                print("Enter price range")
+                numberforcanada = int(input())
+                if numberforcanada <= 50:
+                    print(f"{hotelforcanada1} - {hotelforcanadaprice1}, {hotelforcanada2} - {hotelforcanadaprice2}")
+                elif numberforcanada >= 51:
+                    print(f"{hotelforcanada3} - {hotelforcanadaprice3}, {hotelforcanada4} - {hotelforcanadaprice4}")
+                else:
+                    print("please enter from 0-100")
+            print("Number of people traveling")
+            canadatravellers = int(input())
+            if canadatravellers > 1:
+                print("Enter number of Adults")
+                canadanumberofadults = int(input())
+                print("Enter number of children")
+                canadanumberofchildren = int(input())
+                print("******************************************************************")
+                print(f"Total Travelers = {canadanumberofadults} Adults + {canadanumberofchildren} Children")
+                print(canadanumberofadults + canadanumberofchildren)
+                print("******************************************************************")
+                print("Please note that the hotel booking is not included in the bill")
+                print("Subtotal=£")
+                print(canadanumberofadults * price6no + canadanumberofchildren * price6ch)
+                print("******************************************************************")
+                print("******************************************************************")
+                print("Thank you please proceed to make your payments")
+                print("At this time we only accept credit card payments")
+                print("Enter First and Last Name")
+                canadafirstandlastname = input()
+                print("Enter email address")
+                canadaemailaddress = input()
+                print("Enter Card number")
+                canadacardnumber = int(input())
+                print("Enter Expiry Date")
+                canadaexpdate = input()
+                print("Enter CVV")
+                canadacvv = int(input())
+                print("Print Receipt?")
+                printreceiptcanada = input().lower()
+                if printreceiptcanada == "yes":
+                    print("******************************************************************")
+                    print(f"Thank you for your payment {canadafirstandlastname},")
+                    print(f"A copy of this receipt will be sent to {canadaemailaddress}")
+                    print("******************************************************************")
+                    print(f"your trip to {country6} is {price6}")
+                    print(f"{canadanumberofadults} Adults = {price6no}")
+                    print(f"{canadanumberofchildren} Children = {price6ch}")
+                    print(f"Total = £")
+                    print(canadanumberofadults * price6no + canadanumberofchildren * price6ch)
+                    print(f"Charged to your card '{canadacardnumber}'")
+                    print("******************************************************************")
+                else:
+                    print(f"Thank you for your payment {canadafirstandlastname},")
+                    print(f"A copy of the receipt will be sent to {canadaemailaddress}")
+            else:
+                print("******************************************************************")
+                print("******************************************************************")
+                print("Thank you please proceed to make your payments")
+                print("At this time we only accept credit card payments")
+                print("Enter First and Last Name")
+                canadafirstandlastname = input()
+                print("Enter email address")
+                canadaemailaddress = input()
+                print("Enter Card number")
+                canadacardnumber = int(input())
+                print("Enter Expiry Date")
+                canadaexpdate = input()
+                print("Enter CVV")
+                canadacvv = int(input())
+                print("Print Receipt?")
+                printreceiptcanada = input().lower()
+                if printreceiptcanada == "yes":
+                    print("******************************************************************")
+                    print(f"Thank you for your payment {canadafirstandlastname},")
+                    print(f"A copy of this receipt will be sent to {canadaemailaddress}")
+                    print("******************************************************************")
+                    print(f"your trip to {country6} is {price6}")
+                    print(f"Total = £")
+                    print(canadatravellers * price6no)
+                    print(f"Charged to your card '{canadacardnumber}'")
+                    print("******************************************************************")
+                else:
+                    print(f"Thank you for your payment {canadafirstandlastname},")
+                    print(f"A copy of the receipt will be sent to {canadaemailaddress}")
+        elif destination_countryy == "argentina":
+            print(f"{country9} is {price9}")
+            print("Would you like a hotel?")
+            accepts_hotel = input().lower()
+            if accepts_hotel == "yes":
+                print("Enter price range")
+                numberforargentina = int(input())
+                if numberforargentina <= 50:
+                    print(f"{hotelforargentina1} - {hotelforargentinaprice1}, {hotelforargentina2} - {hotelforargentinaprice2}")
+                elif numberforargentina >= 51:
+                    print(f"{hotelforargentina3} - {hotelforargentinaprice3}, {hotelforargentina4} - {hotelforargentinaprice4}")
+                else:
+                    print("please enter from 0-100")
+            print("Number of people traveling")
+            argentinatravellers = int(input())
+            if argentinatravellers > 1:
+                print("Enter number of Adults")
+                argentinanumberofadults = int(input())
+                print("Enter number of children")
+                argentinanumberofchildren = int(input())
+                print("******************************************************************")
+                print(f"Total Travelers = {argentinanumberofadults} Adults + {argentinanumberofchildren} Children")
+                print(argentinanumberofadults + argentinanumberofchildren)
+                print("******************************************************************")
+                print("Please note that the hotel booking is not included in the bill")
+                print("Subtotal=£")
+                print(argentinanumberofadults * price9no + argentinanumberofchildren * price9ch)
+                print("******************************************************************")
+                print("******************************************************************")
+                print("Thank you please proceed to make your payments")
+                print("At this time we only accept credit card payments")
+                print("Enter First and Last Name")
+                argentinafirstandlastname = input()
+                print("Enter email address")
+                argentinaemailaddress = input()
+                print("Enter Card number")
+                argentinacardnumber = int(input())
+                print("Enter Expiry Date")
+                argentinaexpdate = input()
+                print("Enter CVV")
+                argentinacvv = int(input())
+                print("Print Receipt?")
+                printreceiptargentina = input().lower()
+                if printreceiptargentina == "yes":
+                    print("******************************************************************")
+                    print(f"Thank you for your payment {argentinafirstandlastname},")
+                    print(f"A copy of this receipt will be sent to {argentinaemailaddress}")
+                    print("******************************************************************")
+                    print(f"your trip to {country9} is {price9}")
+                    print(f"{argentinanumberofadults} Adults = {price9no}")
+                    print(f"{argentinanumberofchildren} Children = {price9ch}")
+                    print(f"Total = £")
+                    print(argentinanumberofadults * price9no + argentinanumberofchildren * price9ch)
+                    print(f"Charged to your card '{argentinacardnumber}'")
+                    print("******************************************************************")
+                else:
+                    print(f"Thank you for your payment {argentinafirstandlastname},")
+                    print(f"A copy of the receipt will be sent to {argentinaemailaddress}")
+            else:
+                print("******************************************************************")
+                print("******************************************************************")
+                print("Thank you please proceed to make your payments")
+                print("At this time we only accept credit card payments")
+                print("Enter First and Last Name")
+                argentinafirstandlastname = input()
+                print("Enter email address")
+                argentinaemailaddress = input()
+                print("Enter Card number")
+                argentinacardnumber = int(input())
+                print("Enter Expiry Date")
+                argentinaexpdate = input()
+                print("Enter CVV")
+                argentinacvv = int(input())
+                print("Print Receipt?")
+                printreceiptargentina = input().lower()
+                if printreceiptargentina == "yes":
+                    print("******************************************************************")
+                    print(f"Thank you for your payment {argentinafirstandlastname},")
+                    print(f"A copy of this receipt will be sent to {argentinaemailaddress}")
+                    print("******************************************************************")
+                    print(f"your trip to {country9} is {price9}")
+                    print(f"Total = £")
+                    print(argentinatravellers * price9no)
+                    print(f"Charged to your card '{argentinacardnumber}'")
+                    print("******************************************************************")
+                else:
+                    print(f"Thank you for your payment {argentinafirstandlastname},")
+                    print(f"A copy of the receipt will be sent to {argentinaemailaddress}")
+        else:
+            print(f"We do not currently travel to any other countries asides {country6} and {country9}")
+    elif continent == "africa":
+        print(f"{country1}, {country7}")
+        print("Select destination")
+        destination_countryyy = input().lower()
+        if destination_countryyy == "nigeria":
+            print(f"{country1} is {price1}")
+            print("Would you like a Hotel?")
+            collects_hotel = input().lower()
+            if collects_hotel == "yes":
+                print("Enter a price range")
+                numberfornigeria = int(input())
+                if numberfornigeria <= 50:
+                    print(f"{hotelfornigeria1}-{hotelfornigeriaprice1}, {hotelfornigeria2} - {hotelfornigeriaprice2}")
+                elif numberfornigeria >= 51:
+                    print(f"{hotelfornigeria3}-{hotelfornigeriaprice3}, {hotelfornigeria4} -  {hotelfornigeriaprice4}")
+                else:
+                    print("please enter from 0-100")
+            print("Number of people traveling")
+            nigeriatravellers = int(input())
+            if nigeriatravellers > 1:
+                print("Enter number of Adults")
+                nigerianumberofadults = int(input())
+                print("Enter number of children")
+                nigerianumberofchildren = int(input())
+                print("******************************************************************")
+                print(f"Total Travelers = {nigerianumberofadults} Adults + {nigerianumberofchildren} Children")
+                print(nigerianumberofadults + nigerianumberofchildren)
+                print("******************************************************************")
+                print("Please note that the hotel booking is not included in the bill")
+                print("Subtotal=£")
+                print(nigerianumberofadults * price1no + nigerianumberofchildren * price1ch)
+                print("******************************************************************")
+                print("******************************************************************")
+                print("Thank you please proceed to make your payments")
+                print("At this time we only accept credit card payments")
+                print("Enter First and Last Name")
+                nigeriafirstandlastname = input()
+                print("Enter email address")
+                nigeriaemailaddress = input()
+                print("Enter Card number")
+                nigeriacardnumber = int(input())
+                print("Enter Expiry Date")
+                nigeriaexpdate = input()
+                print("Enter CVV")
+                nigeriacvv = int(input())
+                print("Print Receipt?")
+                printreceiptnigeria = input().lower()
+                if printreceiptnigeria == "yes":
+                    print("******************************************************************")
+                    print(f"Thank you for your payment {nigeriafirstandlastname},")
+                    print(f"A copy of this receipt will be sent to {nigeriaemailaddress}")
+                    print("******************************************************************")
+                    print(f"your trip to {country1} is {price1}")
+                    print(f"{nigerianumberofadults} Adults = {price1no}")
+                    print(f"{nigerianumberofchildren} Children = {price1ch}")
+                    print(f"Total = £")
+                    print(nigerianumberofadults * price1no + nigerianumberofchildren * price1ch)
+                    print(f"Charged to your card '{nigeriacardnumber}'")
+                    print("******************************************************************")
+                else:
+                    print(f"Thank you for your payment {nigeriafirstandlastname},")
+                    print(f"A copy of the receipt will be sent to {nigeriaemailaddress}")
+            else:
+                print("******************************************************************")
+                print("******************************************************************")
+                print("Thank you please proceed to make your payments")
+                print("At this time we only accept credit card payments")
+                print("Enter First and Last Name")
+                nigeriafirstandlastname = input()
+                print("Enter email address")
+                nigeriaemailaddress = input()
+                print("Enter Card number")
+                nigeriacardnumber = int(input())
+                print("Enter Expiry Date")
+                nigeriaexpdate = input()
+                print("Enter CVV")
+                nigeriacvv = int(input())
+                print("Print Receipt?")
+                printreceiptnigeria = input().lower()
+                if printreceiptnigeria == "yes":
+                    print("******************************************************************")
+                    print(f"Thank you for your payment {nigeriafirstandlastname},")
+                    print(f"A copy of this receipt will be sent to {nigeriaemailaddress}")
+                    print("******************************************************************")
+                    print(f"your trip to {country1} is {price1}")
+                    print(f"Total = £")
+                    print(nigeriatravellers * price1no)
+                    print(f"Charged to your card '{nigeriacardnumber}'")
+                    print("******************************************************************")
+                else:
+                    print(f"Thank you for your payment {nigeriafirstandlastname},")
+                    print(f"A copy of the receipt will be sent to {nigeriaemailaddress}")
+        elif destination_countryyy == "kenya":
+            print(f"{country7} is {price7}")
+            print("Would you like a Hotel?")
+            receives_hotel = input().lower()
+            if receives_hotel == "yes":
+                print("Enter a price range")
+                numberforkenya = int(input())
+                if numberforkenya <= 50:
+                    print(f"{hotelforkenya1}  -{hotelforkenyaprice1}, {hotelforkenya2}-{hotelforkenyaprice2}")
+                elif numberforkenya >= 51:
+                    print(f"{hotelforkenya3} - {hotelforkenya3}, {hotelforkenya4} - {hotelforkenyaprice4}")
+                else:
+                    print("please enter from 0-100")
+            print("Number of people traveling")
+            kenyatravellers = int(input())
+            if kenyatravellers > 1:
+                print("Enter number of Adults")
+                kenyanumberofadults = int(input())
+                print("Enter number of children")
+                kenyanumberofchildren = int(input())
+                print("******************************************************************")
+                print(f"Total Travelers = {kenyanumberofadults} Adults + {kenyanumberofchildren} Children")
+                print(kenyanumberofadults + kenyanumberofchildren)
+                print("******************************************************************")
+                print("Please note that the hotel booking is not included in the bill")
+                print("Subtotal=£")
+                print(kenyanumberofadults * price7no + kenyanumberofchildren * price7ch)
+                print("******************************************************************")
+                print("******************************************************************")
+                print("Thank you please proceed to make your payments")
+                print("At this time we only accept credit card payments")
+                print("Enter First and Last Name")
+                kenyafirstandlastname = input()
+                print("Enter email address")
+                kenyaemailaddress = input()
+                print("Enter Card number")
+                kenyacardnumber = int(input())
+                print("Enter Expiry Date")
+                kenyaexpdate = input()
+                print("Enter CVV")
+                kenyacvv = int(input())
+                print("Print Receipt?")
+                printreceiptkenya = input().lower()
+                if printreceiptkenya == "yes":
+                    print("******************************************************************")
+                    print(f"Thank you for your payment {kenyafirstandlastname},")
+                    print(f"A copy of this receipt will be sent to {kenyaemailaddress}")
+                    print("******************************************************************")
+                    print(f"your trip to {country7} is {price7}")
+                    print(f"{kenyanumberofadults} Adults = {price7no}")
+                    print(f"{kenyanumberofchildren} Children = {price7ch}")
+                    print(f"Total = £")
+                    print(kenyanumberofadults * price7no + kenyanumberofchildren * price1ch)
+                    print(f"Charged to your card '{kenyacardnumber}'")
+                    print("******************************************************************")
+                else:
+                    print(f"Thank you for your payment {kenyafirstandlastname},")
+                    print(f"A copy of the receipt will be sent to {kenyaemailaddress}")
+            else:
+                print("******************************************************************")
+                print("******************************************************************")
+                print("Thank you please proceed to make your payments")
+                print("At this time we only accept credit card payments")
+                print("Enter First and Last Name")
+                kenyafirstandlastname = input()
+                print("Enter email address")
+                kenyaemailaddress = input()
+                print("Enter Card number")
+                kenyacardnumber = int(input())
+                print("Enter Expiry Date")
+                kenyaexpdate = input()
+                print("Enter CVV")
+                kenyacvv = int(input())
+                print("Print Receipt?")
+                printreceiptkenya = input().lower()
+                if printreceiptkenya == "yes":
+                    print("******************************************************************")
+                    print(f"Thank you for your payment {kenyafirstandlastname},")
+                    print(f"A copy of this receipt will be sent to {kenyaemailaddress}")
+                    print("******************************************************************")
+                    print(f"your trip to {country7} is {price7}")
+                    print(f"Total = £")
+                    print(kenyatravellers * price7no)
+                    print(f"Charged to your card '{kenyacardnumber}'")
+                    print("******************************************************************")
+                else:
+                    print(f"Thank you for your payment {kenyafirstandlastname},")
+                    print(f"A copy of the receipt will be sent to {kenyaemailaddress}")
+        else:
+            print("Not in the list")
+    else:
+        print("Invalid destination, please try again when we update the app")
+welcome()
+print("Back to Top?")
+Startover = input().lower()
+while Startover != "no":
+    welcome()
+print("Thank You")
+#I did it!!!😭😭
